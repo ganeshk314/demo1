@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>ng if </h1>
+<p *ngIf="name == 'manasa'">
+  hello Ganesh
+</p>
+</div>
+
+<div class="container">
+  <h1>ng for</h1>
+  <table class="table" >
+    <thead>
+      <th>index</th>
+      <th>Name</th>
+      <th>Age</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let detail of details;let i=index" >
+        <td>{{i}}</td>
+        <td>{{detail.name}}</td>
+        <td>{{detail.age}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <h1>ng switch</h1>
+  <div  [ngSwitch]="2" >
+    <span *ngSwitchCase="1" >Ganesh</span>
+    <span *ngSwitchCase="2" >mohan</span>
+    <span *ngSwitchDefault >Dilip</span>
+  </div>
+
+</div>
+
+<div class="container">
+  <h1>ng style</h1>
+  <p [ngStyle]="{'background-color':'red'}" >hello</p>
+</div>
+<div class="container">
+  <h1>ng class</h1>
+  <p [ngClass]="{'text-primary':name=='manasa'}" >hello</p>
+</div>

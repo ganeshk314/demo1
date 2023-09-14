@@ -1,0 +1,19 @@
+<div class="container">
+  <div>
+    {{eventlog}}
+  </div>
+  <div>
+    <h1>keyup event</h1>
+    <input type="text"  (keyup)="keyupevent($event)" class="form-control">
+
+  </div>
+  <div>
+    <h1>change</h1>
+    <input type="text" (change)="changeevent($event)" class="form-control" >
+  </div>
+
+  <div>
+    <h1>change</h1>
+    <button (click)="clickfun()" class="btn btn-danger btn-lg"  >hello</button>
+  </div>
+</div>

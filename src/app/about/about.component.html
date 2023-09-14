@@ -1,0 +1,23 @@
+<h1 *ngIf="boolvlaue == false">hello bro</h1>
+<br>
+<div [ngSwitch]="num">
+  <span  *ngSwitchCase="1" >Ganesh</span>
+  <span  *ngSwitchCase="2" >Hello Ganesh</span>
+</div>
+--------------
+<div [ngStyle]="{'color':'red'}" >hi hello</div>
+<div [ngStyle]="{'color':boolvlaue == false ? 'red':'yellow'}" >pink</div>
+<div [ngClass]="{'text-primary':num==2}" >jawan</div>
+
+<div *ngFor="let contact of contacts" >
+  <div> {{contact.name}} </div>
+  <div> {{contact.rollno}} </div>
+
+</div>
+
+<div class="container">
+  <h1>two way binding</h1>
+  <label for="">name</label>
+  <input type="text" [(ngModel)]="names" >
+  {{names}}
+</div>
